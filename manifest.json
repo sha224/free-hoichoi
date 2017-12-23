@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Free Hoichoi",
+  "version": "1.0",
+  "description": "Watch full shows and movies on Hoichoi for free",
+  "homepage_url": "https://github.com/sha224/free-hoichoi",
+
+  "icons": {
+    "48": "icons/free-hoichoi-48.png",
+    "96": "icons/free-hoichoi-96.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/free-hoichoi-32.png",
+    "default_title": "Free Hoichoi",
+    "default_popup": "popup/choose_resolution.html"
+  },
+
+  "permissions": [
+    "webRequest",
+    "https://vhoichoi.viewlift.com/"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "46.0a1"
+    }
+  }
+}
